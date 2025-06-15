@@ -22,15 +22,15 @@ export default function AddEvent() {
   };
 
   return (
-    <>
-      <form onSubmit={handleSubmit}>
+    <div className="color1 p-5 m-1 rounded-xl text-[#8A784E]">
+      <form onSubmit={handleSubmit} >
         <input
           type="text"
           name="title"
           placeholder="Enter Title"
           value={formData.title}
           onChange={handleChange}
-          className="border p-2 rounded bg-white "
+          className="border w-50 p-2 m-1 rounded bg-white "
         />
 
         <input
@@ -38,14 +38,14 @@ export default function AddEvent() {
           name="date"
           value={formData.date}
           onChange={handleChange}
-          className="border p-2 rounded"
+          className="border m-1 w-50 p-2 rounded"
         />
         <input
           type="time"
           name="time"
           value={formData.time}
           onChange={handleChange}
-          className="border p-2 rounded"
+          className="border w-50 m-1 p-2 rounded"
         />
 
         <textarea
@@ -53,16 +53,16 @@ export default function AddEvent() {
           placeholder="write a description for the event"
           onChange={handleChange}
           value={formData.description}
-          className="border p-2 my-3 rounded"
+          className="border m-1 w-50 p-2 my-3 rounded"
         ></textarea>
 
         <button
           type="submit"
           className="bg-blue-500 text-white px-4 py-2 rounded"
         >
-          sumbit
+          submit
         </button>
       </form>
-    </>
+    </div>
   );
 }

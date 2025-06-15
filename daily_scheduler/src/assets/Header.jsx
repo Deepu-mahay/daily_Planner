@@ -12,11 +12,11 @@ const time = new Date().toLocaleTimeString([],{
 
 )
     return (
-        <div className='border-solid flex flex-row font-mono'>
-            <div className='flex mx-auto'>
-               <span className='bg-green-500  justify-center items-start box-decoration-slice bg-linear-to-r from-indigo-600 to-pink-500 px-2 text-white'> Daily Planner-</span>
-               {today}
-            </div>
+        <div className='border-solid flex color1 rounded-lg py-5 flex-row font-mono'>
+            <div className='flex  place-content-between text-[#3B3B1A] w-full'>
+               <span className=' mx-7 p-4 rounded-2xl font-serif-(ui-serif) text-3xl m-auto  items-start box-decoration-slice bg-linear-to-r from-green-300 to-pink-300 px-2 text-white'> Daily Planner</span>
+              <span className='border bg-[#8A784E] rounded-3xl p-4 mr-4 '>Date: {today}</span> 
+            </div>				
         </div>
     );
 }

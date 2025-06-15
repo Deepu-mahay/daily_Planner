@@ -22,13 +22,13 @@ const events = [
 
 export function BigCalendar() {
   return (
-    <div className="h-[600px] bg-white rounded-xl shadow p-4">
+    <div className="h-[600px] bg-[#E7EFC7] rounded-xl shadow p-4">
       <Calendar
         localizer={localizer}
         events={events}
         startAccessor="start"
         endAccessor="end"
-        style={{ height: 500, color:'green' }}
+        style={{ height: 500, color:'#8A784E' }}
         components={{
             event: CustomEvent,
           }}
